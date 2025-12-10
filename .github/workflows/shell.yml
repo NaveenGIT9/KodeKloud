@@ -1,0 +1,13 @@
+name : My first shell Script Run
+
+on : push
+
+jobs:
+    job1:
+        runs-on : ubuntu-latest
+        steps:
+            - name : checkout Repo
+              uses : actions/checkout@v4
+        
+            - name : Run shell script
+              run : ./navin.sh
